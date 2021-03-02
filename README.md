@@ -5,14 +5,14 @@
 ### 技术栈
 
 - Vue项目 使用 **vue-cli3** 快速构建 使用 **vue-router** **vuex** **vue-loader** 开发
-- ElementUI 按需引用UI组件
-- 代码检查与格式化工具 **eslint** + **prettier**，自动查错+修复格式
-- css预编译语言 **less**
-- 两个预制的不同 **主题切换**，加单独的完整颜色定制（使用 **css变量var**）
-- **vue-i18n** 实现中文 + English
+- **ElementUI** 按需引用UI组件
+- 代码检查与格式化工具 **Eslint** + **Prettier**，自动查错+修复格式
+- css预编译语言 **Less**
+- 两个预制的不同 **主题切换**，加单独的完整颜色定制（**css变量var**）
+- **Vue-i18n** 实现中文 + English
 - **自适应**：手机、平板、PC不同分辨率
 - 项目 **组件化** **模块化** 明确 
-- **yarn** 包管理，**git** 工程代码管理
+- **Yarn** 包管理，**Git** 工程代码管理
 ---
 
 ### 主要功能
@@ -29,6 +29,7 @@
 ![Preview_2](https://raw.githubusercontent.com/33YANG/vue-project/master/preview/preview_2.PNG)
 ![Preview_3](https://raw.githubusercontent.com/33YANG/vue-project/master/preview/preview_3.PNG)
 ![Preview_4](https://raw.githubusercontent.com/33YANG/vue-project/master/preview/preview_4.PNG)
+![Preview_5](https://raw.githubusercontent.com/33YANG/vue-project/master/preview/preview_5.PNG)
 
 ## 开发
 
