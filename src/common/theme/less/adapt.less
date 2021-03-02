@@ -1,0 +1,77 @@
+@import './variables';
+
+html {
+  font-size: @default_rem;
+}
+
+// 默认尺寸下的显示状态
+.show-xs-and-down {
+  display: none;
+}
+.hidden-xs-and-down {
+  display: inline;
+}
+.top-nav {
+  .hidden-sm-and-down {
+    display: inline;
+  }
+  .show-sm-and-down {
+    display: none;
+  }
+  .hidden-xs-and-down {
+    display: inline;
+  }
+  .show-xs-and-down {
+    display: none;
+  }
+}
+
+// 宽度小于920px的情况下
+@media screen and (max-width: 920px) {
+  .top-nav {
+    .hidden-sm-and-down {
+      display: none;
+    }
+    .show-sm-and-down {
+      display: inline;
+    }
+    .smaller-top-nav .el-submenu__icon-arrow {
+      display: none;
+    }
+  }
+}
+// 宽度小于680px的情况下
+@media screen and (max-width: 768px) {
+  // .show-xs-and-down {
+  //   display: inline;
+  // }
+  .hidden-xs-and-down {
+    display: none;
+  }
+  .show-xs-and-down {
+    display: inline;
+  }
+  .top-nav {
+    .hidden-xs-and-down {
+      display: none;
+    }
+    .show-xs-and-down {
+      display: inline;
+    }
+  }
+}
+// 宽度小于510px的情况下
+@media screen and (max-width: 510px) {
+  .width-auto-zoom .el-dialog {
+    width: auto !important;
+    margin: @default_rem_10px;
+  }
+  .top-nav {
+    .smaller-padding {
+      padding: 0 @default_rem_10px;
+    }
+    .smaller-top-nav .el-submenu__title {
+      padding: 0;
+    }
+  }
+}

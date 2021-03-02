@@ -1,17 +1,19 @@
 <template>
-  <div class="custon»er">
+  <div class="customer">
     <el-tooltip effect="dark" content="咨询客服" placement="top">
       <div class="customerIcon" @click="isShowModal = true">
         <i class="el-icon-chat-line-square"></i>
       </div>
     </el-tooltip>
-    <el-dialog title="咨询客服" :visible.sync="isShowModal" width="35%">
-      <P>如有任何问题，请联系<b>Aditinistrator</b>咨询。</P>
-      <P>咨询时间：工作日9:30 - 18:00</P>
+    <el-dialog title="咨询客服" :visible.sync="isShowModal" width="500px" class="width-auto-zoom">
+      <p>如有任何问题，请联系<b>Administrator</b>咨询。</p>
+      <p>咨询时间：工作日 9:30 - 18:00</p>
       <img src="../assets/QR_Code.png" width="50%" />
+      <!-- <img src="../assets/user.png" width="50%" /> -->
     </el-dialog>
   </div>
 </template>
+
 <script>
 export default {
   name: '',
@@ -39,14 +41,16 @@ export default {
   height: 48px;
   border-radius: 8px;
 }
-/deep/ .el-dialog_header {
+
+/deep/ .el-dialog__header {
   border-bottom: 1px solid #e8e8e8;
 }
-/deep/ .el-dialog_body {
+
+/deep/ .el-dialog__body {
   padding: 10px 20px 20px 20px;
   text-align: center;
 }
 /deep/ .el-dialog {
-  min-width: 450px;
+  border-radius: 6px;
 }
 </style>

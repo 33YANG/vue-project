@@ -1,38 +1,47 @@
 import Vue from 'vue'
 import {
-Button,
-Menu,
-MenuItem,
-Submenu,
-MenuItemGroup,
-Row,
-Col,
-Container,
-Header,
-Aside,
-Footer,
-Main,
-Tooltip,
-Radio,
-RadioGroup,
-RadioButton,
-Collapse,
-Avatar,
-Link,
-Divider,
-Dialog,
-Drawer,
-ColorPicker,
-Form,
-FormItem,
-Input,
-Tag,
-Message,
-MessageBox,
+  Button,
+  Menu,
+  MenuItem,
+  Submenu,
+  MenuItemGroup,
+  Row,
+  Col,
+  Container,
+  Header,
+  Aside,
+  Footer,
+  Main,
+  Tooltip,
+  Radio,
+  RadioGroup,
+  RadioButton,
+  Collapse,
+  Avatar,
+  Link,
+  Divider,
+  Dialog,
+  Drawer,
+  ColorPicker,
+  Form,
+  FormItem,
+  Input,
+  Tag,
+  Message,
+  Notification,
+  MessageBox,
+  Alert,
+  Loading,
+  Card,
+  Progress,
+  DatePicker,
+  Dropdown,
+  DropdownMenu,
+  DropdownItem,
+  Table,
+  TableColumn,
+  Pagination,
 } from 'element-ui'
-// import lang from 'element-ui/lib/locale/lang/en'
-// import locale from 'element-ui/lib/locale1'
-// locale.use(lang)
 
 Vue.use(Button)
 Vue.use(Menu)
@@ -61,13 +70,26 @@ Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
 Vue.use(Tag)
+Vue.use(Alert)
+Vue.use(Loading)
+Vue.use(Card)
+Vue.use(Progress)
+Vue.use(DatePicker)
+Vue.use(Dropdown)
+Vue.use(DropdownMenu)
+Vue.use(DropdownItem)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Pagination)
 
 // Use 'Vue.use(MessageBox)' occur error
 Vue.component(MessageBox)
 Vue.component(Message)
+Vue.component(Notification)
 
-Vue.prototype.$msgbox = MessageBox
-Vue.prototype.$alert = MessageBox.alert
+// Vue.prototype.$msgbox = MessageBox
+// Vue.prototype.$alert = MessageBox.alert
 Vue.prototype.$confirm = MessageBox.confirm
-Vue.prototype.$prompt = MessageBox.prompt
+// Vue.prototype.$prompt = MessageBox.prompt
 Vue.prototype.$message = Message
+Vue.prototype.$notify = Notification

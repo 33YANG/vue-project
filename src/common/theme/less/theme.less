@@ -1,0 +1,256 @@
+@import './variables';
+
+/* Vue绿样式 */
+.vue-small-submenu-class {
+  .el-menu-item {
+    i {
+      color: @vue_green_icon_color;
+    }
+  }
+}
+.vue-green {
+  .el-menu-item i,.el-submenu i {
+    color: @vue_green_icon_color;
+  }
+  .el-menu-item.is-active {
+    i {
+      color: @vue_color;
+    }
+  }
+  .smaller-top-nav {
+    .el-submenu__title {
+      border-bottom: none !important;
+    }
+  }
+  .main-logo-item:hover {
+    background-color: @vue_green_nav_dark_bk !important;
+  }
+  .el-menu-item.is-active.right-item,
+  .el-menu-item.is-active.main-logo-item,
+  .el-menu-item.is-active.collapse-icon,
+  .el-menu-item.is-active.smaller-padding {
+    color: @vue_green_icon_color !important;
+    i {
+      color: @vue_green_icon_color !important;
+    }
+  }
+  .leftside {
+    .left-side-menu {
+      border-color: @vue_green_nav_dark_bk
+    }
+    .main-logo-item {
+      span {
+        color: @text_color;
+      }
+      &:hover {
+        background: @vue_green_nav_dark_bk !important
+      }
+    }
+  }
+  .customer {
+    .customerIcon {
+      background: @vue_color;
+      box-shadow: 0px 0px 5px 2px @text_hover_color;
+      i {
+        color: @vue_green_icon_color_light;
+      }
+      &:hover {
+        background: @vue_color_light;
+        box-shadow: 0px 0px 5px 3px @text_hover_color;
+        transition: all 0.4s ease;
+      }
+    }
+  }
+}
+
+/* iView金样式 */
+.iview-small-submenu-class {
+  .el-menu-item {
+    border-left: 4px solid @iView_golden_nav_dark_border;
+    &:hover {
+      border-left: 4px solid @iView_golden_nav_dark_active_and_hover_color;
+      transition: border .3s ease-in-out;
+    }
+    i {
+      color: @iView_golden_icon_color;
+    }
+  }
+  .el-menu-item.is-active {
+    border-left: 4px solid @iView_golden_nav_dark_active_and_hover_color;
+  }
+}
+.iView-golden {
+  .top-nav {
+    .el-menu-item i,.el-submenu i {
+      color: @iView_golden_icon_color;
+    }
+    .el-menu-item.is-active:not(.right-item):not(.collapse-icon):not(.smaller-padding) i {
+      color: @iView_golden_nav_dark_active_and_hover_color;
+    }
+    .el-menu-item:not(.right-item):not(.collapse-icon):not(.smaller-padding):not(.main-logo-item) {
+      &:hover {
+        i {
+          color: @iView_golden_nav_dark_active_and_hover_color;
+          transition: color 0.4s ease-out;
+        }
+        color: @iView_golden_nav_dark_active_and_hover_color !important;
+        border-bottom: 2px solid @iView_golden_nav_dark_active_and_hover_color !important;
+        // background: rgb(53, 53, 53) !important;
+      }
+    }
+    .el-menu-item.right-item:hover {
+      background: @iView_golden_nav_hover_background !important;
+    }
+    .el-menu-item.collapse-icon:hover {
+      i {
+        color: @iView_golden_nav_dark_active_and_hover_color !important;
+      }
+    }
+    .smaller-top-nav {
+      .el-submenu__title {
+        border-bottom: none !important;
+      }
+      &:hover {
+        i.el-icon-menu {
+          color: @iView_golden_nav_dark_active_and_hover_color;
+        }
+      }
+    }
+    .smaller-top-leftside:hover {
+      i {
+        color: @iView_golden_nav_dark_active_and_hover_color;
+      }
+    }
+  }
+  .leftside {
+    .left-side-menu {
+      border-color: @iView_golden_nav_dark_border
+    }
+    .el-menu-item i, .el-submenu i {
+      color: @iView_golden_text_icon_color;
+    }
+    .main-logo-item {
+      span {
+        color: @iView_golden_nav_dark_active_and_hover_color;
+      }
+      &:hover {
+        background: @iView_golden_nav_dark_border !important
+      }
+    }
+    .sub-menu-item {
+      background: @iView_golden_sidebar_sub_bk !important;
+      &:hover {
+        background: @iView_golden_sidebar_sub_hover_bk !important;
+      }
+    }
+    .el-menu-item.is-active:not(.main-logo-item) {
+      background: @iView_golden_nav_hover_background !important;
+    }
+  }
+  .customer {
+    .customerIcon {
+      background: @iView_golden_customer_icon_color;
+      box-shadow: 0px 0px 5px 2px @text_hover_color;
+      i {
+        color: @vue_green_icon_color_light;
+      }
+      &:hover {
+        background: @iView_golden_customer_icon_hover_color;
+        box-shadow: 0px 0px 5px 3px @text_hover_color;
+        transition: all 0.4s ease;
+      }
+    }
+  }
+}
+
+/* 自定义样式 */
+.customize-small-submenu-class {
+  .el-menu-item {
+    i {
+      color: var(--customizeTopTextColor);
+    }
+  }
+}
+.customize-style { 
+  .top-nav {
+    .el-menu-item i,.el-submenu i {
+      color: var(--customizeTopTextColor);
+    }
+    .el-menu-item.is-active:not(.right-item):not(.collapse-icon):not(.smaller-padding) i {
+      color: var(--customizeTopActiveTextColor);
+    }       
+    .el-menu-item:not(.right-item):not(.collapse-icon):not(.smaller-padding):not(.main-logo-item) {
+      &:hover {
+        i {
+          color: var(--customizeTopActiveTextColor);
+          transition: color 0.4s ease-out;
+        }
+        color: var(--customizeTopActiveTextColor) !important;
+        border-bottom: 2px solid var(--customizeTopActiveTextColor) !important;
+      }
+    }
+    .el-menu-item.is-active.right-item,
+    .el-menu-item.is-active.main-logo-item,
+    .el-menu-item.is-active.collapse-icon,
+    .el-menu-item.is-active.smaller-padding {
+      color: var(--customizeTopTextColor) !important;
+      i {
+        color: var(--customizeTopTextColor) !important;
+      }
+    }
+    // .el-menu-item.collapse-icon:hover {
+    //   i {
+    //     color: var(--customizeTopActiveTextColor) !important;
+    //   }
+    // }
+    .smaller-top-nav {
+      .el-submenu__title {
+        border-bottom: none !important;
+      }
+    }
+    .main-logo-item:hover {
+      background-color: var(--customizeTopBackgroundColor) !important;
+    }
+  }
+  .leftside {
+    .el-menu-item i,.el-submenu i {
+      color: var(--customizeLeftTextColor);
+    }
+    .el-menu-item.is-active {
+      i {
+        color: var(--customizeLeftActiveTextColor);
+      }
+    }
+    .left-side-menu {
+      border-color: var(--customizeLeftBackgroundColor)
+    }
+    .main-logo-item {
+      span {
+        color: var(--customizeLeftTextColor);
+      }
+      &:hover {
+        background: var(--customizeLeftBackgroundColor) !important
+      }
+    }
+    // .el-menu-item.is-active {
+    //   background: var(--customizeLeftBackgroundColor) !important;
+    // }    
+  }
+  .customer {
+    .customerIcon {
+      // @customizeLeftTextColor: darken(var(--customizeLeftTextColor), 20%);
+      background: var(--customizeTopActiveTextColor);
+      // box-shadow: 0px 0px 5px 2px var(--customizeLeftTextColor);
+      box-shadow: 0px 0px 5px 2px @text_hover_color;
+      i {
+        color: var(--customizeTopTextColor);
+      }
+      &:hover {
+        // @customizeLeftActiveTextColor: lighten(var(--customizeLeftActiveTextColor), 10%);
+        background: var(--customizeTopActiveTextColor);
+        box-shadow: 0px 0px 5px 3px var(--customizeTopActiveTextColor);
+        transition: all 0.4s ease;
+      }
+    }
+  }
+}

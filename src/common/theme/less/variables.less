@@ -1,0 +1,36 @@
+// Variables 
+@default_rem: 16px;
+@default_rem_10px: @default_rem * 0.625;
+
+@text_color: #fff;
+@text_hover_color: darken(@text_color, 10%);
+
+// Vue green color variables
+@vue_color: #41b883;
+@vue_color_light: lighten(@vue_color, 10%);
+@vue_green_icon_color: rgb(221, 221, 221);
+@vue_green_icon_color_light: #fff;
+@vue_green_nav_dark_bk: rgb(84, 92, 100);
+@vue_green_nav_dark_bk_hover: darken(@vue_green_nav_dark_bk, 10%);
+
+// iView golden color variables
+@iView_golden_text_icon_color: #d0d0d0;
+@iView_golden_nav_dark_border: #1d1e23;
+@iView_golden_sidebar_sub_bk: #000;
+@iView_golden_sidebar_sub_hover_bk: #17181c;
+@iView_golden_nav_hover_background: #333333;
+@iView_golden_nav_dark_active_and_hover_color: #f6ca9d;  // 深
+@iView_golden_nav_dark_text_and_default_color: #b99a7c;  // 浅
+@iView_golden_customer_icon_color: #f3a251;              // 更深
+@iView_golden_customer_icon_hover_color: #fdbf80;
+@iView_golden_icon_color: rgba(246,202,157,.7);
+
+// 结合CSS变量功能与Less变量功能 实现js操控css变量 实现调色板式颜色定制
+:root {
+  --customizeLeftTextColor: @text_color;
+  --customizeTopTextColor: @text_color;
+  --customizeLeftActiveTextColor: @vue_color;
+  --customizeTopActiveTextColor: @vue_color;
+  --customizeLeftBackgroundColor: @vue_green_nav_dark_bk;
+  --customizeTopBackgroundColor: @vue_green_nav_dark_bk;
+}
