@@ -2,11 +2,11 @@ module.exports = {
   // 基本路径
   // baseUrl: './',//vue-cli3.3以下版本使用
   // vue-cli3.3+新版本使用
-  publicPath: process.env.NODE_ENV === 'development' ? './' : '',
+  publicPath: process.env.NODE_ENV === 'development' ? './' : '/vue-project/',
 
   // 输出文件目录
   // outputDir: 'E:/WorkDoc/work_project/express-mysql/static',
-  outputDir: './dist',
+  outputDir: './docs',
 
   // eslint-loader 是否在保存的时候检查
   lintOnSave: true,
