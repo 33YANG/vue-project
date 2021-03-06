@@ -2,7 +2,7 @@ module.exports = {
   // 基本路径
   // baseUrl: './',//vue-cli3.3以下版本使用
   // vue-cli3.3+新版本使用
-  publicPath: process.env.NODE_ENV === 'development' ? './' : '/vue-project/',
+  publicPath: process.env.NODE_ENV === 'development' ? './' : './',
 
   // 输出文件目录
   // outputDir: 'E:/WorkDoc/work_project/express-mysql/static',

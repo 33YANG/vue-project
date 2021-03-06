@@ -25,11 +25,11 @@
 - Modal 页面
 
 
-![Preview_1](https://raw.githubusercontent.com/33YANG/vue-project/master/preview/preview_1.PNG)
-![Preview_2](https://raw.githubusercontent.com/33YANG/vue-project/master/preview/preview_2.PNG)
-![Preview_3](https://raw.githubusercontent.com/33YANG/vue-project/master/preview/preview_3.PNG)
-![Preview_4](https://raw.githubusercontent.com/33YANG/vue-project/master/preview/preview_4.PNG)
-![Preview_5](https://raw.githubusercontent.com/33YANG/vue-project/master/preview/preview_5.PNG)
+![Preview_1](https://ftp.bmp.ovh/imgs/2021/03/c45fc73b17133db9.png)
+![Preview_2](https://ftp.bmp.ovh/imgs/2021/03/a40a02623e4acc8c.png)
+![Preview_3](https://ftp.bmp.ovh/imgs/2021/03/8957b97ce063bc04.png)
+![Preview_4](https://ftp.bmp.ovh/imgs/2021/03/b6fd4813808875ae.png)
+![Preview_5](https://ftp.bmp.ovh/imgs/2021/03/576ee7e0152e8b09.png)
 
 ## 开发
 

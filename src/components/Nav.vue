@@ -39,7 +39,7 @@
         <i class="el-icon-setting"></i>
       </el-menu-item>
       <el-menu-item class="right-item" @click="handleNavClick({ name: 'login' })">
-        <el-avatar :size="30" :src="require('@/assets/user.png')"></el-avatar>
+        <el-avatar :size="30" :src="require('../assets/user.png')"></el-avatar>
         <span class="hidden-xs-and-down" style="margin: 10px">{{ $t('nav.userName') }}</span>
       </el-menu-item>
     </el-menu>
