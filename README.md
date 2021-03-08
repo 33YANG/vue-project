@@ -2,6 +2,8 @@
 
 > 使用 **VUE2.0** 框架，**ElementUI** 自主搭建的一个后台管理系统部分页面
 
+[https://33yang.github.io/vue-project](https://33yang.github.io/vue-project/)
+
 ### 技术栈
 
 - Vue项目 使用 **vue-cli3** 快速构建 使用 **vue-router** **vuex** **vue-loader** 开发
