@@ -2,7 +2,7 @@
   "name": "vue-project",
   "version": "0.1.0",
   "description": "Vue Vue-cli Element",
-  "author": "33YANG <YANGTEIKE@gmail.com>",
+  "author": "33YANG",
   "private": true,
   "main": "main.js",
   "license": "MIT",
